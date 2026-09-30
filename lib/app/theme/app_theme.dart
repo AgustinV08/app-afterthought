@@ -1,3 +1,4 @@
+import 'package:afterthought/app/theme/app_button_theme.dart';
 import 'package:flutter/material.dart';
 
 class AppTheme
@@ -17,21 +18,8 @@ class AppTheme
     colorScheme: .fromSeed(
       seedColor: mainColor,
     ),
-    elevatedButtonTheme: ElevatedButtonThemeData(
-      style: ButtonStyle(
-        foregroundColor: const WidgetStatePropertyAll(Color(0xFFD8D4C8)),
-        backgroundColor: WidgetStatePropertyAll(mainColor),
-        padding: WidgetStatePropertyAll(.all(separation)),
-        shape: WidgetStatePropertyAll(RoundedRectangleBorder(
-          borderRadius: .all(.circular(radius)),
-        )),
-        textStyle: const WidgetStatePropertyAll(TextStyle(
-          fontSize: 16,
-          fontFamily: 'Switzer',
-          fontWeight: .w500,
-        ))
-      )
-    ),
+    elevatedButtonTheme: AppButtonTheme.instance.elevatedButtonThemeData,
+    textButtonTheme: AppButtonTheme.instance.textButtonThemeDatas,
     textTheme: const TextTheme(
       displayLarge: TextStyle(
         fontSize: 32,

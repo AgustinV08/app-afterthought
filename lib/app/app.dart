@@ -1,5 +1,5 @@
 import 'package:afterthought/app/app_routing.dart';
-import 'package:afterthought/app/app_theme.dart';
+import 'package:afterthought/app/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
 class App extends StatelessWidget
