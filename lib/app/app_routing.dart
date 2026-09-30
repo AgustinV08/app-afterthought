@@ -1,13 +1,14 @@
-import 'package:afterthought/app/home/views/home.dart';
+import 'package:afterthought/app/auth/views/login/login.dart';
+import 'package:afterthought/app/home/views/home/home.dart';
 import 'package:flutter/material.dart';
 
 class AppRouting
 {
-  static const initialRoute = MyHomePage.route;
+  static const String initialRoute = LoginPage.route;
 
   static final Map<String, Widget Function(BuildContext)> routes =
   {
-    MyHomePage.route:
-    (_) => const MyHomePage(title: 'Flutter Demo Home Page'),
+    MyHomePage.route: (_) => const MyHomePage(title: 'Flutter Demo Home Page'),
+    LoginPage.route: (_) => const LoginPage(),
   };
 }
