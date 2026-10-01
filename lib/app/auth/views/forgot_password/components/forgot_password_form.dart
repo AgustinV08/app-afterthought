@@ -1,29 +1,24 @@
 import 'package:afterthought/app/auth/components/email_field/email_field.dart';
-import 'package:afterthought/app/auth/components/password_field/password_field.dart';
 import 'package:afterthought/app/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
-class LoginForm extends StatefulWidget
+class ForgotPasswordForm extends StatefulWidget
 {
-  const LoginForm({
+  const ForgotPasswordForm({
     super.key,
   });
 
   @override
-  State<StatefulWidget> createState() => LoginFormState();
+  State<StatefulWidget> createState() => ForgotPasswordFormState();
 }
 
-class LoginFormState extends State<LoginForm>
+class ForgotPasswordFormState extends State<ForgotPasswordForm>
 {
   final TextEditingController _emailController = TextEditingController();
-  final TextEditingController _passwordController = TextEditingController();
 
   @override
   void dispose()
   {
-    _emailController.dispose();
-    _passwordController.dispose();
-
     super.dispose();
   }
 
@@ -41,12 +36,6 @@ class LoginFormState extends State<LoginForm>
           EmailField(
             controller:_emailController,
             useIcon: false,
-          ),
-          Text('Password',
-            style: Theme.of(context).textTheme.bodyMedium,
-          ),
-          PasswordField(
-            controller: _passwordController,
           ),
         ],
       ),

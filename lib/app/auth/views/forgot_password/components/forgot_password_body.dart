@@ -1,14 +1,14 @@
-import 'package:afterthought/app/auth/views/register/components/register_form.dart';
+import 'package:afterthought/app/auth/views/forgot_password/components/forgot_password_form.dart';
 import 'package:afterthought/app/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
-class RegisterBody extends StatelessWidget
+class ForgotPasswordBody extends StatelessWidget
 {
-  const RegisterBody({
+  const ForgotPasswordBody({
     super.key,
   });
 
-  void _register(BuildContext context)
+  void _forgotPassword(BuildContext context)
   {
 
   }
@@ -28,15 +28,15 @@ class RegisterBody extends StatelessWidget
           height: 100,
         ),
         Center(
-          child: Text('Sign Up',
+          child: Text('Forgot Password?',
             style: Theme.of(context).textTheme.displayLarge,
           ),
         ),
-        const RegisterForm(),
+        const ForgotPasswordForm(),
         ElevatedButton(
           onPressed: ()
           {
-            _register(context);
+            _forgotPassword(context);
           },
           child: const Text('Continue'),
         ),

@@ -1,4 +1,5 @@
 import 'package:afterthought/app/theme/app_button_theme.dart';
+import 'package:afterthought/app/theme/app_form_theme.dart';
 import 'package:flutter/material.dart';
 
 class AppTheme
@@ -32,20 +33,6 @@ class AppTheme
         fontWeight: .normal,
       ),
     ),
-    inputDecorationTheme: InputDecorationThemeData(
-      border: OutlineInputBorder(
-        borderRadius: .circular(radius,),
-        borderSide: BorderSide(
-          color: mainColor,
-        ),
-      ),
-      contentPadding: const .all(20),
-      hintStyle: TextStyle(
-        fontSize: 16,
-        fontWeight: .normal,
-        fontFamily: 'Switzer',
-        color: const Color(0xFF2D3142).withValues(alpha: 0.3),
-      ),
-    ),
+    inputDecorationTheme: AppFormTheme.instance.inputDecoration,
   );
 }

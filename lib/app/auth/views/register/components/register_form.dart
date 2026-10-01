@@ -3,17 +3,17 @@ import 'package:afterthought/app/auth/components/password_field/password_field.d
 import 'package:afterthought/app/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
-class LoginForm extends StatefulWidget
+class RegisterForm extends StatefulWidget
 {
-  const LoginForm({
+  const RegisterForm({
     super.key,
   });
 
   @override
-  State<StatefulWidget> createState() => LoginFormState();
+  State<StatefulWidget> createState() => RegisterFormState();
 }
 
-class LoginFormState extends State<LoginForm>
+class RegisterFormState extends State<RegisterForm>
 {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
